@@ -253,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sise: {fileID: 293599758}
   canYazisi: {fileID: 575913425}
-  "biti\u015FYazisi": {fileID: 0}
+  bitisYazisi: {fileID: 369448553}
 --- !u!1 &369448551
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,8 +973,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.24, y: 2.25, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.1252892, y: 1.0828276, z: 0.2}
+  m_Center: {x: 0.00000021674416, y: -0.5310111, z: 0}
 --- !u!212 &1442148941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1015,7 +1015,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 49ea690374b7b1e4fb982dd411d8828b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
