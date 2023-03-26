@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class kasaHareketi : MonoBehaviour
 {
-    public float hiz; 
+    public float hiz;
+    public Transform sise;
 
 
     void Update()
@@ -18,5 +19,17 @@ public class kasaHareketi : MonoBehaviour
         {
             transform.Translate(hiz * Time.deltaTime, 0f, 0f);
         }
+    }
+
+    void OnCollisionEnter(Collision Temas)
+    {
+
+        float rastgele = Random.Range(-6f, 6f);
+
+        if (Temas.gameObject.tag == "sise")
+        {
+            sise.position = new Vector3 (rastgele, 6f, 0f);
+        }
+        
     }
 }
