@@ -7,17 +7,27 @@ using UnityEngine.SceneManagement;
 public class şişe : MonoBehaviour
 {
     public Transform sise;
-    public TextMeshProUGUI canYazisi;
+    public TextMeshProUGUI canYazisi , bitisYazisi;
     int can = 3;
 
 
     private void Update()
     {
-        canYazisi.text = "Can : " + can.ToString();
+        canYazisi.text = "Can : " + can;
 
-        if (can== 0 )
+        if (can == 0 )
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            bitisYazisi.text = "Oyun Bitti\r\nTekrar Başlamak için bir tuşa basın";
+            Time.timeScale = 0;
+
+            if (Input.anyKeyDown)
+            {
+                
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                Time.timeScale = 1;
+            }
+
+            
         }
     }
 
